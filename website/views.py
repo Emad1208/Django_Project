@@ -3,14 +3,15 @@ from django.http import HttpResponse, JsonResponse
 
 
 def index_view(request):
-    return HttpResponse('<h1>Home Page Project</h1>')
+    return render(request,'index.html')
 
 
 
 def about_view(request):
-    return HttpResponse('<h1>About Us</h1>')
+    return render(request,'about.html')
+
 
 
 
 def contact_view(request):
-    return HttpResponse('<h1>Contact Us</h1>')
+    return render(request,'contact.html')
